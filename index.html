@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Link 2D</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">BROWSER ARCADE</p>
+          <h1>Fruit Link 2D</h1>
+        </div>
+        <button id="restart-btn" class="primary-btn">Restart</button>
+      </header>
+
+      <section class="hud">
+        <div class="stat-card">
+          <span>Level</span>
+          <strong id="level-label">1</strong>
+        </div>
+        <div class="stat-card">
+          <span>Score</span>
+          <strong id="score-label">0</strong>
+        </div>
+        <div class="stat-card timer-wrap">
+          <span>Time</span>
+          <strong id="time-label">120</strong>
+        </div>
+        <div class="stat-card">
+          <span>Pairs</span>
+          <strong id="pairs-label">0</strong>
+        </div>
+      </section>
+
+      <main class="game-layout">
+        <div class="board-panel">
+          <div id="board" class="board" aria-label="Fruit board"></div>
+          <div id="connection-line" aria-hidden="true"></div>
+        </div>
+
+        <aside class="side-panel">
+          <div class="status-box">
+            <h2>Status</h2>
+            <p id="message-box">Match identical fruits to clear the board.</p>
+          </div>
+
+          <div class="ad-box" id="ad-box">
+            <span class="ad-tag">Sponsored</span>
+            <p>CrazyGames Ad</p>
+            <small id="ad-text">Fresh challenge incoming...</small>
+          </div>
+
+          <button id="start-btn" class="primary-btn wide">Start Game</button>
+        </aside>
+      </main>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
